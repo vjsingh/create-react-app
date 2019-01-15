@@ -205,6 +205,7 @@ function verifyTypeScriptSetup() {
       }
     } else if (parsedCompilerOptions[option] !== valueToCheck) {
       appTsConfig.compilerOptions[option] = value;
+      messages.push('AAAAAAAAAAA');
       messages.push(
         `${coloredOption} ${chalk.bold(
           valueToCheck == null ? 'must not' : 'must'
